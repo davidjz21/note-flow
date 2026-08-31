@@ -31,7 +31,7 @@ export const HomePage = () => {
     return (
         <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] 
         gap-4 xl:grid-cols-[repeat(auto-fit,minmax(250px,1fr))]">
-            {notes.map(note => (
+            {notes.map((note) => (
                 <CardNote
                     key={note._id}
                     title={note.title}

@@ -1,6 +1,6 @@
 import { Trash } from "lucide-react"
 
-export const DeleteConfirmation = ({
+export const DeleteConfirmationModal = ({
     title,
     deleteNote,
     setShowConfirmModal,

@@ -3,7 +3,8 @@ import { useState } from 'react'
 import { useNavigate } from "react-router-dom"
 import { toast } from "react-toastify"
 import axios from "axios"
-import DeleteConfirmationModal from "./DeleteConfirmationModal"
+import { DeleteConfirmationModal } from "./DeleteConfirmationModal"
+
 
 export const CardNote = ({ title, description, date, id, onDelete }) => {
     const navigate = useNavigate()

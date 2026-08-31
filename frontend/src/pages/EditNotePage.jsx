@@ -1,7 +1,11 @@
 import axios from "axios"
-import { useEffect } from "react"
-import { useState } from "react"
 import { toast } from "react-toastify"
+import { useState } from "react"
+import { useEffect } from "react"
+import { useNavigate, useParams } from "react-router-dom"
+import { NoteForm } from "../components/NoteForm"
+
+const apiURL = import.meta.env.VITE_API_URL
 
 export const EditNotePage = () => {
     const { id } = useParams()

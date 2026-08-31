@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react"
 
-export const NoteForm = ({ onSubmit, initialDate }) => {
-    const [note, setNotes] = useState(initialDate)
+export const NoteForm = ({ onSubmit, initialData }) => {
+    const [note, setNotes] = useState(initialData)
 
     useEffect(() => {
-        setNotes[initialDate]
-    }, [initialDate])
+        setNotes[initialData]
+    }, [initialData])
 
     const handleChange = (e) => {
         setNotes({
