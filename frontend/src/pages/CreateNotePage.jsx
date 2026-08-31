@@ -8,8 +8,9 @@ export const CreateNotePage = () => {
 
     const handleCreate = async (note) => {
         try {
-            await axios.post(`${import.meta.env.VITE_API_URL}/api/notes`, note)
-                .then(res => {
+            await axios
+                .post(`${import.meta.env.VITE_API_URL}/api/notes`, note)
+                .then((res) => {
                     if (res.status !== 201) {
                         throw new Error("Error al crear una nota")
                     }
@@ -26,7 +27,9 @@ export const CreateNotePage = () => {
     }
     return (
         <div>
-            <NoteForm onSubmit={handleCreate} initialDate={{ title: "", content: "" }} />
+            <NoteForm
+                onSubmit={handleCreate}
+                initialDate={{ title: "", content: "" }} />
         </div>
     )
 }

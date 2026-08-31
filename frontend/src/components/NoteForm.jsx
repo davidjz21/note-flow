@@ -20,9 +20,11 @@ export const NoteForm = ({ onSubmit, initialDate }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}
+        <form
+            onSubmit={handleSubmit}
             className="bg-base-300 rounded-lg max-w-4xl mx-auto p-10">
-            <input className="black w-full mb-8 input lg:input-lg focus:ring-0 focus:outline-0 border-0"
+            <input
+                className="black w-full mb-8 input lg:input-lg focus:ring-0 focus:outline-0 border-0"
                 placeholder="Titulo"
                 type="text"
                 id="title"
@@ -31,7 +33,8 @@ export const NoteForm = ({ onSubmit, initialDate }) => {
                 onChange={handleChange}
                 required />
 
-            <textarea className="input lg:input-lg resize-y w-full mb-8 textarea focus:outline-0 border-0"
+            <textarea
+                className="input lg:input-lg resize-y w-full mb-8 textarea focus:outline-0 border-0"
                 name="description"
                 id="description"
                 value={note.description}
