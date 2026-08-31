@@ -2,9 +2,9 @@
 
 Aplicación web para crear, editar y gestionar notas.
 
-## Tecnologías usadas
+# Tecnologías usadas
 
-### Frontend
+## Frontend
 - React
 - React Router
 - Tailwind CSS
@@ -14,5 +14,8 @@ Aplicación web para crear, editar y gestionar notas.
 - Lucide React
 - React Toastify
 
-### Backend
+## Backend
 - Node.js
+
+## Enlace 
+https://note-flow-web.netlify.app/
