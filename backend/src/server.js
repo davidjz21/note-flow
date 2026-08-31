@@ -10,7 +10,7 @@ const app = express()
 app.use(cors({
     origin: [
         "http://localhost:5173",
-        "https://note-flow-web.netlify.app/"
+        "https://note-flow-web.netlify.app"
     ]
 }))
 
@@ -18,7 +18,7 @@ app.use(express.json())
 
 app.use("/api/notes", notesRouter)
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3000
 
 connectDB()
     .then(() => {
