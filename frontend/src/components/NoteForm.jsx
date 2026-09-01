@@ -4,7 +4,7 @@ export const NoteForm = ({ onSubmit, initialData }) => {
     const [note, setNotes] = useState(initialData)
 
     useEffect(() => {
-        setNotes[initialData]
+        setNotes(initialData)
     }, [initialData])
 
     const handleChange = (e) => {
@@ -29,7 +29,7 @@ export const NoteForm = ({ onSubmit, initialData }) => {
                 type="text"
                 id="title"
                 name="title"
-                value={note.title}
+                value={note?.title}
                 onChange={handleChange}
                 required />
 
@@ -37,7 +37,7 @@ export const NoteForm = ({ onSubmit, initialData }) => {
                 className="input lg:input-lg resize-y w-full mb-8 textarea focus:outline-0 border-0"
                 name="description"
                 id="description"
-                value={note.description}
+                value={note?.description}
                 onChange={handleChange}
                 placeholder="Descripcion de la tarea"
                 required>
