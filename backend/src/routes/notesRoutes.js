@@ -21,7 +21,7 @@ router.get("/:id", async (req, res) => {
         res.status(200).json(note)
     } catch (error) {
         console.error("Error al obtener nota por id", error)
-        req.status(500).json({ error: "Internal server error" })
+        res.status(500).json({ error: "Internal server error" })
     }
 })
 
@@ -39,7 +39,7 @@ router.post("/", async (req, res) => {
 
     } catch (error) {
         console.error("Error al crear la nota", error)
-        req.status(500).json({ error: "Internal server error" })
+        res.status(500).json({ error: "Internal server error" })
     }
 })
 
@@ -52,7 +52,7 @@ router.delete("/:id", async (req, res) => {
         res.status(200).json({ message: "Nota eliminada correctamente" })
     } catch (error) {
         console.log("Error al eliminar una nota", error)
-        req.status(500).json({ error: "Internal server error" })
+        res.status(500).json({ error: "Internal server error" })
     }
 })
 
@@ -67,7 +67,7 @@ router.put("/:id", async (req, res) => {
         res.status(200).json({ message: "Nota actualizada correctamente", note: updateNote })
     } catch (error) {
         console.log("Error al actualizar una nota", error)
-        req.status(500).json({ error: "Internal server error" })
+        res.status(500).json({ error: "Internal server error" })
     }
 })
 
