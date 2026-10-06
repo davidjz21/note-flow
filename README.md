@@ -1,4 +1,4 @@
- NoteFlow - Descripción del Proyecto
+# NoteFlow - Descripción del Proyecto
 
 ## Visión General
 NoteFlow es una aplicación web full-stack para crear, editar y gestionar notas personales. La aplicación permite a los usuarios crear notas con título y descripción, ver todas sus notas en una lista, editar notas existentes y eliminarlas con confirmación.
